@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My prototype 1</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="/">
+			  	<strong>
+			  		<i class="fab fa-viacoin"></i> Prototype-Vunn
+			  	</strong>
+		  	</a>
+		  	<div>
+                <ul class="nav navbar-right justify-content-end">
+                    <% if(!currentUser){ %>
+                        <li class="nav-item mr-auto"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item mr-auto"><a class="nav-link" href="/login">Login</a></li>
+                        <li class="nav-item mr-auto"><a class="nav-link" href="/signup">Sign Up</a></li>
+                    <% } else { %>
+                        <li class="nav-item mr-auto"><a class="nav-link" href="#">Signed In As <%= currentUser.username %></a></li>
+                        <li class="nav-item mr-auto"><a class="nav-link" href="/logout">Logout</a></li>
+                    <% } %>
+                </ul>
+            </div>
+		</div>
+	</nav>
+
+	<div class="container m-5 p-5">
+	
