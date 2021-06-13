@@ -4,7 +4,8 @@
   "description": "Prototype 1 with key functional features to use webRTC framework and get a detailed idea of how things work",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "Kspkumar",
   "license": "ISC",
