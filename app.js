@@ -17,7 +17,7 @@ app.use(express.static(__dirname + "/public"));
 
 //PASSPORT CONFIGURATION
 app.use(require("express-session")({
-	secret: "Yeah I'm a bad guy",
+	secret: "<secret for the password hash>",
 	resave: false,
 	saveUninitialized: false 
 }));
