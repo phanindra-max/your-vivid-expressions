@@ -12,6 +12,6 @@ app.use(express.static(__dirname + "/public"));
 //using routes
 app.use("/", routes);
 
-app.listen(4000, function(){
-    console.log("Server Started on port 4000!!");
+app.listen(process.env.PORT || 4000, function(){
+    console.log("Server Started !!");
 });
