@@ -1,14 +1,79 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+#video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: auto; */
+}
+body {
+  background-image: linear-gradient(45deg,rgba(0, 0, 255, 0.692), rgba(32, 234, 241, 0.986)),
+  url("../../media/examples/lizard.png");
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: brown; */
+}
+.classy {
+  background-color:transparent;
 }
 
 canvas {
-  position: absolute;
+  position: fixed;
+  border: 6px solid rgb(190, 186, 186);
+  animation: borderor 10s ease-in-out  infinite;
+}
+
+@keyframes borderor{
+  0%{
+    /* border-top-width: 3px; */
+    border-top-color: rgb(190, 186, 186);
+  }
+  /* 25%{
+    border-top-right-radius: 23px;
+  } */
+  25%{
+    /* border-top-width: 4.5px; */
+    border-top-color: rgb(253, 138, 6);
+    border-top-right-radius: 23px;
+
+  }
+  26%{
+    border-right-color: rgb(190, 186, 186);
+  }
+  50%{
+    border-top-color: rgb(190, 186, 186);
+    border-right-color: rgb(7, 11, 253);
+    border-end-end-radius:  23px ;
+  }
+  51%{
+
+    border-bottom-color: rgb(190, 186, 186);
+  }
+  75%{
+    border-right-color: rgb(190, 186, 186);
+    border-bottom-color: rgb(9, 255, 0);
+    border-bottom-left-radius: 23px;
+  }
+  76%{
+
+    border-left-color: rgb(190, 186, 186);
+  }
+  99%{
+    border-left-color: rgb(214, 0, 0);
+    border-bottom-color: rgb(190, 186, 186);
+    border-top-left-radius: 23px;
+  }
+  100%{
+    border-left-color: rgb(190, 186, 186);
+  }
+
+  
 }

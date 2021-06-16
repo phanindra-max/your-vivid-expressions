@@ -1,7 +1,11 @@
+*{
+  margin: 0;padding: 0;
+  
+}
 #video {
-	margin-top: 25px;
+  margin-top: 25px;
 }
 
 #snap {
-	margin: 5px 0 10px 0;
+  margin: 0;
 }
