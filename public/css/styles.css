@@ -36,6 +36,12 @@ body {
   border-radius: .25em;
   margin-top:1rem;
   cursor:pointer;
+  transition: outline-offset 250ms ease-in-out;
+}
+
+.btn:hover{
+  outline: 1px solid #27496d;
+  outline-offset: 2px;
 }
 canvas {
   border: 2px solid hotpink;
