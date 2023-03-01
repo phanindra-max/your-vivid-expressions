@@ -28,7 +28,8 @@ body {
 }
 .btn{
   padding:.75rem 1rem;
-  background-image: linear-gradient(to right bottom, #40cae7, #35a8cc, #3187ae, #2d678e, #27496d);  border:none;
+  background-image: linear-gradient(to right bottom, #40cae7, #35a8cc, #3187ae, #2d678e, #27496d); 
+   border:none;
   color:rgb(255, 255, 255);
   font-size:1rem;
   font-weight: 700;
@@ -44,6 +45,7 @@ canvas {
 }
 .phone_text {
   display: none;
+  text-align: center;
 }
 
 #video {
@@ -68,6 +70,12 @@ canvas {
   .container {
     flex-direction: column;
     justify-content: flex-start;
+  }
+  .video_box{
+    order:1;
+  }
+  .info{
+    order:2;
   }
 }
 
