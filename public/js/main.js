@@ -19,7 +19,7 @@ function startVideo() {
 
 video.addEventListener("playing", () => {
   const canvas = faceapi.createCanvasFromMedia(video);
-  document.body.append(canvas);
+  document.querySelector(".video_box").append(canvas);
 
   const displaySize = { width: 640, height: 480 };
   faceapi.matchDimensions(canvas, displaySize);
